@@ -1,0 +1,31 @@
+document.getElementById("formulario")[0].addEventListener("submit", (evt) =>{
+  evt.preventDefault(); let adulto = parseInt(document.getElementById("adulto").value); 
+  let crianca = parseInt(document.getElementById("crianca").value); 
+  let bebum = parseInt(document.getElementById("bebum").value); 
+  let carne = (adulto * 400) + (crianca * 200); 
+  let acompanhamento = (adulto * 200) + (crianca * 200); 
+  let agua = (adulto * 400) + (crianca * 400); 
+  const carnetotal = carne / 1000; const acomptotal = acompanhamento / 1000; const aguatotal = agua / 1000;
+  let beberefri; if (adulto < bebum) { bebebrefri = bebum - adultos;
+                                     } else { bebebrefri = adulto - bebum; } 
+  let refri = (beberefri * 500) + crianca * 500;
+  const refritotal = refri / 1000;
+  let cerveja = bebum * 2000;
+  const cervejatotal = cerveja /1000; 
+  const entradabebum = document.getElementById("entradabebum");
+  entradabebum.textContent = bebum;
+  const entradaadulto = document.getElementById("entradaadulto");
+  entradaadulto.textContent = adulto; 
+  const entradacrianca= document.getElementById("entradacrianca");
+  entradacrianca.textContent = crianca; 
+  const entradacarne = document.getElementById("entradacarne");
+  entradacarne.textContent = carnetotal;
+  const entradaacomp = document.getElementById("entradaacomp");
+  entradaacomp.textContent = acomptotal;
+  const entradacereja = document.getElementById("entradacerveja"); 
+  entradacerveja.textContent = cervejatotal;
+  const entradarefri = document.getElementById("entradarefri"); 
+  entradarefri.textContent = refritotal;
+  const entradaagua = document.getElementById("entradaagua"); 
+  entradaagua.textContent = aguatotal;
+})
